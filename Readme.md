@@ -74,4 +74,4 @@
 
 #### Link to page
 http://a68276474582c4577b30fe4b87fbe20a-202165846.us-east-1.elb.amazonaws.com/
-![Local Image](images/result_address_to_service.PNG)
+![Local Image](images/result.PNG)
