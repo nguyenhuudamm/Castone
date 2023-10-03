@@ -1,7 +1,6 @@
 #### Get source
     git clone https://github.com/nguyenhuudamm/KubenetesProject.git
 
-
 #### Install kubectl
     -- curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
     -- which kubectl
@@ -57,11 +56,30 @@
 
 #### Step by step - Project result
 
+#### Link github
+    https://github.com/nguyenhuudamm/KubenetesProject
+
+![Local Image](images/github.PNG)
+
 #### Check circle
-![Local Image](images/check_circle.PNG)
+### Circle failed
+![Local Image](images/makeline_docker_fail.PNG)
+![Local Image](images/makeline_app_fail.PNG)
+### Circle passed
+    https://app.circleci.com/pipelines/github/nguyenhuudamm/KubenetesProject/22/workflows/3e081327-f228-46f6-8ddc-103cbba34346/jobs/24
+
+![Local Image](images/circle_install.PNG)
+![Local Image](images/circle_pass.PNG)
 
 #### Run docker
 ![Local Image](images/run_docker_01.PNG)
+![Local Image](images/run_docker_02.PNG)
+
+#### Run make_prediction.sh 
+![Local Image](images/docker_log_01.PNG)
+
+#### Output: log container
+![Local Image](images/docker_log_02.PNG)
 
 #### Upload docker
 ![Local Image](images/upload_docker.PNG)
@@ -69,9 +87,15 @@
 #### Create pod - Port Forward
 ![Local Image](images/run_kubernetes_01.PNG)
 
-#### Create service
-![Local Image](images/create_service_01.PNG)
+#### Run make_prediction.sh 
+![Local Image](images/run_kubernetes_02.PNG)
 
-#### Link to page
-http://a68276474582c4577b30fe4b87fbe20a-202165846.us-east-1.elb.amazonaws.com/
-![Local Image](images/result.PNG)
+#### Output: log pods
+![Local Image](images/run_kubernetes_03.PNG)
+
+
+
+
+
+
+
