@@ -1,5 +1,5 @@
 #### Get source
-    git clone https://github.com/nguyenhuudamm/KubenetesProject.git
+    git clone https://github.com/nguyenhuudamm/Castone.git
 
 #### Install kubectl
     -- curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
@@ -57,7 +57,7 @@
 #### Step by step - Project result
 
 #### Link github
-    https://github.com/nguyenhuudamm/KubenetesProject
+    https://github.com/nguyenhuudamm/Castone
 
 ![Local Image](images/github.PNG)
 
@@ -66,7 +66,7 @@
 ![Local Image](images/makeline_docker_fail.PNG)
 ![Local Image](images/makeline_app_fail.PNG)
 ### Circle passed
-    https://app.circleci.com/pipelines/github/nguyenhuudamm/KubenetesProject/22/workflows/3e081327-f228-46f6-8ddc-103cbba34346/jobs/24
+    https://app.circleci.com/pipelines/github/nguyenhuudamm/Castone
 
 ![Local Image](images/circle_install.PNG)
 ![Local Image](images/circle_pass.PNG)
@@ -75,23 +75,36 @@
 ![Local Image](images/run_docker_01.PNG)
 ![Local Image](images/run_docker_02.PNG)
 
-#### Run make_prediction.sh 
-![Local Image](images/docker_log_01.PNG)
-
-#### Output: log container
-![Local Image](images/docker_log_02.PNG)
-
 #### Upload docker
 ![Local Image](images/upload_docker.PNG)
+
+#### Docker Images on ECR
+![Local Image](images/image_ecr.PNG)
+
+#### Deployment - Cluster
+![Local Image](images/create_cluster.PNG)
+![Local Image](images/create_cluster_02.PNG)
+![Local Image](images/create_cluster_03.PNG)
+![Local Image](images/create_cluster_04.PNG)
+![Local Image](images/create_cluster_05.PNG)
 
 #### Create pod - Port Forward
 ![Local Image](images/run_kubernetes_01.PNG)
 
-#### Run make_prediction.sh 
-![Local Image](images/run_kubernetes_02.PNG)
+#### Create service
+![Local Image](images/deployment_service.PNG)
 
-#### Output: log pods
-![Local Image](images/run_kubernetes_03.PNG)
+#### All Info
+### Get Nodes
+![Local Image](images/get_nodes.PNG)
+### Get Pods
+![Local Image](images/get_pods.PNG)
+### Get Services
+![Local Image](images/get_services.PNG)
+### Link result
+    http://a95c58641cc344a81b099222e68d7eaf-1127860096.us-east-1.elb.amazonaws.com/
+
+![Local Image](images/get_result.PNG)
 
 
 

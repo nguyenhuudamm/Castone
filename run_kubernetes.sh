@@ -8,7 +8,7 @@
 dockerpath="830989663524.dkr.ecr.us-east-1.amazonaws.com/damnh1-kubernestesproject:latest"
 
 # Run in Docker Hub container with Kubernetes
-kubectl run kubernetesproject --image=$dockerpath --port=8000 --labels app=kubernetesproject
+kubectl run kubernetesproject --image=$dockerpath --port=8080 --labels app=kubernetesproject
 
 # Create deploy
 kubectl create deploy kubernetesproject --image=kubernetesproject:latest
@@ -17,4 +17,4 @@ sleep 120
 kubectl get pods
 
 # Forward the container port to host
-kubectl port-forward kubernetesproject 8081:8080
+kubectl port-forward kubernetesproject 8080:8080
